@@ -1,0 +1,56 @@
+/* Game Layout */
+.game {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Game Info Panel */
+.game-info {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 200px;
+}
+
+.game-info h3 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 8px;
+}
+
+.game-info ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* History Button Styling */
+.history-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.history-button:hover {
+  background-color: #45a049;
+}
+
+/* History List Items */
+.history-item {
+  margin-bottom: 8px;
+}

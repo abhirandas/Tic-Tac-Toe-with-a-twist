@@ -1,0 +1,139 @@
+/* Minimal Dark Theme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+/* Game container */
+.game {
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Game title */
+.game h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+/* Status display */
+.status {
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+/* Board styling */
+.board {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+/* Board row: flex container */
+.board-row {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.board-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Each square */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #3a3a3a;
+  border: none;
+  border-radius: 4px;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.square:hover {
+  background-color: #4a4a4a;
+}
+
+.square:active {
+  background-color: #555555;
+}
+
+/* X and O styling */
+.square:not(:empty) {
+  background-color: #404040;
+}
+
+.square:contains('X') {
+  color: #ff6b6b;
+}
+
+.square:contains('O') {
+  color: #4ecdc4;
+}
+
+/* Reset button */
+.reset-button {
+  background-color: #404040;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.reset-button:hover {
+  background-color: #505050;
+}
+
+.reset-button:active {
+  background-color: #606060;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+  }
+  
+  .game {
+    padding: 20px;
+  }
+  
+  .game h1 {
+    font-size: 2em;
+  }
+}
