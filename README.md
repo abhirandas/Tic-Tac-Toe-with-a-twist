@@ -1,12 +1,38 @@
-# React + Vite
+❌⭕ Tic-Tac-Toe with a Twist
+📝 Description
+This is a feature-rich implementation of the classic Tic-Tac-Toe game, based on the official React documentation tutorial. It serves as an excellent foundational project for learning core React concepts like state management and component composition.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+Standard Tic-Tac-Toe gameplay.
 
-Currently, two official plugins are available:
+Time Travel: View the history of moves and "jump" back to any past state in the game.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Display the location (row, col) for each move made.
 
-## Expanding the ESLint configuration
+Highlight the winner's line on the board.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Technology Stack
+Frontend: React
+
+Build Tool: Vite
+
+Languages: JavaScript, HTML, CSS
+
+🚀 Installation
+Clone the repository:
+
+Bash
+
+git clone https://github.com/abhirandas/Tic-Tac-Toe-with-a-twist.git
+cd Tic-Tac-Toe-with-a-twist
+Install dependencies:
+
+Bash
+
+npm install
+Run the application:
+
+Bash
+
+npm run dev
+The game will be available in your browser at the specified local host address.
